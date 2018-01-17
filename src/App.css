@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css?family=Fauna+One|Oxygen:400,300,700");
+
+.App {
+  font-family: Oxygen, Helvetica, Arial, sans-serif; }
+
+h1, h2, h3, h4, h5 {
+font-family: "Fauna One";
+font-weight: 400;
+color: #008BF8; }
+
+.container {
+  width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important; }
+
+.col-xs-12 {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
+header {
+  color: #666;
+  /*background-color: #f3f3f3;*/
+  min-height: 20px;
+  padding: 10px;
+  margin-bottom: 20px; }
+  header .title {
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+  header .user-links {
+    float: right; }
+    header .user-links button {
+      background: none;
+      cursor: pointer;
+      padding: 0;
+      border: 0; }
+      header .user-links button:hover {
+        color: #999; }
+
+a:link, a:visited, a:hover, a:active {
+  color: #008BF8; }
+
+i.fa-trash-o {
+  cursor: pointer;
+  color: #ccc;
+  vertical-align: middle;
+  margin-left: 1em; }
+  i.fa-trash-o:hover {
+    color: #999; }
+
+.wysihtml5-toolbar .btn-default {
+  color: #999; }
+
+#welcome h1 {
+  color: #008BF8; }
+#welcome main {
+  margin: 0 auto;
+  width: 360px; }
+
+span.user-link {
+  margin-left: 1em; }
+
+.ta-editor {
+  margin-top: 0.5em; }
+
+.App .alert.alert-success {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  border: none;
+  position: absolute;
+  right: 1rem;
+  bottom: 0;
+  color: #d3d3d3;
+  background-color: inherit;
+}
+.App .alert-danger {
+  margin-top: 1rem;
+}
+.http-loader__wrapper {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.fade-enter {
+  right: 100px;
+}
+
+.fade-enter-active {
+  right: 0px;
+  transition: .5s ease-in all;
+}
+
+.Main {
+  display: flex;
+  height: 100vh;
+  align-items: stretch;
+}
+
+
+
+.Nav {
+  width: 60px;
+  background-color: #f3f3f3;
+  padding: 0.5rem 0; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; }
+.Nav .logo {
+  font-family: "Fauna One";
+  color: #666;
+  font-size: 3rem;
+}
+.Nav .logo img {
+  width: 30px;
+  padding-left: 4px;
+}
+
+.Nav button {
+  border: 0;
+}
+.Nav .UserLinks {
+  position: absolute;
+  bottom: 10px;
+}
+.Nav .UserLinks button {
+  background: transparent;
+}
+.Nav button i.fa {
+  font-size: 2rem;
+  text-align: center;
+  line-height: 36px;
+}
+.Nav button.new-note {
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  margin-top: 2rem;
+  font-weight: 300;
+  border: 1px solid #008BF8;
+  color: #008BF8;
+  background: #fafafa;
+  font-size: 3rem;
+  outline: none;
+}
+.Nav button.new-note span {
+  position: relative;
+  top: -8px;
+  left: 0;
+}
+
+
+
+.NotesList {
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  max-width: 30rem;
+  min-width: 30rem;
+}
+
+@media (max-width: 800px) {
+  .NotesList {
+    min-width: 20rem;
+    max-width: 20rem;
+  }
+}
+
+.NotesList h3 {
+  color: #999;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: Oxygen;
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin: 20px 2rem;
+}
+
+ul#notes {
+  border-top: 1px solid #eee;
+  overflow-y: scroll;
+  height: calc(100vh - 72px);
+  box-sizing: border-box;
+  list-style: none;
+  margin-top: 1em;
+  padding: 0;
+  width: 100%;
+  color: #999;
+}
+
+ul#notes a:link, ul#notes a:visited, ul#notes a:hover, ul#notes a:active {
+  color: inherit;
+}
+ul#notes > a > li {
+  height: 100px;
+  font-size: 90%;
+  cursor: pointer;
+  overflow: hidden;
+}
+ul#notes li .note {
+  border-top: 1px solid #eee;
+  margin: 0 2rem;
+  padding: 1rem 4px; 
+}
+ul#notes a:first-of-type li .note {
+  border-top: none; 
+}
+ul#notes a:hover li {
+  background-color: #008BF8;
+  color: white !important;
+  text-decoration: none !important;
+}
+ul#notes a:hover li .note {
+  border-color: transparent;
+}
+ul#notes a.active > li {
+  border: 4px solid #ddd;
+}
+ul#notes a.active li .note {
+  border-color: transparent;
+  padding: calc(1rem - 4px) 0;
+}
+ul#notes li .note-title {
+  color: #4a4a4a;
+  font-family: "Fauna One";
+  font-size: 120%;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+ul#notes li .note-body {
+  height: 54px;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+ul#notes li .note-body * {
+  font-size: 1em !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: #999 !important;
+  background: none;
+  border: none;
+}
+ul#notes a:hover {
+  text-decoration: none;
+}
+ul#notes a:hover li * {
+  color: white !important;
+}
+ul#notes li a.note {
+  display: block;
+  height: 100px;
+  padding: 1em;
+  text-decoration: none;
+}
+
+
+.NoteForm {
+  flex-grow: 1;
+  padding: 0 3rem;
+}
+.NoteForm .form-actions {
+  padding-top: 1rem;
+  margin-left: -2rem;
+  display: flex;
+  align-content: center;
+}
+.NoteForm button {
+  border: none;
+  background: none;
+  padding: 0;
+}
+.NoteForm button i.fa {
+  color: #999;
+  font-size: 2rem;
+  margin: 0;
+}
+.NoteForm form {
+  border-top: 1px solid #eee;
+  margin: 2.8rem auto 0;
+  padding-top: 0.5rem;
+  max-width: 80rem;
+}
+input[name="title"] {
+  border: none;
+  font-size: 200%;
+  font-family: "Fauna One";
+  color: #008BF8;
+  font-weight: 400;
+  width: 100%;
+}
+input[name="title"] {
+  outline: none;
+}
+
+.RichTextEditor__root___2QXK- {
+  border: none;
+}
+
+.EditorToolbar__root___3_Aqz {
+  border: none;
+  position: absolute;
+  top: 2.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.RichTextEditor__root___2QXK- .public-DraftEditor-content {
+  height: calc(100vh - 120px);
+  margin-left: -21px;
+  margin-right: -21px;
+}
+
+.RichTextEditor__root___2QXK- .public-DraftEditor-content [data-contents="true"] {
+  margin-left: 17px;
+  margin-right: 17px;
+}
+
+/* Dropdown */
+@media screen and (max-width: 726px) {
+  .Dropdown__root___3ALmx {
+    display: none;
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .Dropdown__root___3ALmx select {
+    border: 0;
+    border-left: 3px solid transparent;
+  }
+}
+.Dropdown__root___3ALmx select {
+  height: 26px;
+  margin: 0;
+  padding: 0;
+}
+.Dropdown__root___3ALmx .Dropdown__value___34Py9 {
+  line-height: 23px;
+  border: 0
+}
+
