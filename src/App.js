@@ -13,7 +13,7 @@ class App extends Component{
                 "note-4": {
                      id: "note-4", 
                      title: "my Fancy Note",
-                      body: "oh so fancy, from App" 
+                     body: "oh so fancy, from App" 
                     },
            
             "note-5": {
